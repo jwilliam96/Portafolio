@@ -1,0 +1,77 @@
+/* * {
+  outline: auto;
+} */
+* {
+  /* outline: 3px solid red; */
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.header__title {
+  text-shadow: 6px 6px 4px black, 6px 6px 4px black;
+}
+
+.sombra {
+  text-shadow: 1px 1px 2px black;
+}
+
+.description {
+  display: grid;
+  place-content: center;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0.5% at 100% 0);
+  transition: 0.8s;
+}
+
+.card:hover .description {
+  clip-path: circle(150% at 100% 0);
+}
+
+.description__title {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+}
+
+.description__text {
+  padding: 0 1rem 1rem;
+}
+
+.description__cta {
+  display: block;
+  text-decoration: none;
+  padding: 0.2rem 2.3rem;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  color: #2f122a;
+  background-color: #d0907c;
+}
+
+.caja {
+  text-shadow: -7px 5px 5px black, -7px 5px 5px black, -7px 5px 5px black;
+}
+
+.cajados {
+  text-shadow: -4px 5px 8px yellow, -6px 5px 5px black, -3px 5px 5px black;
+}
+
+.neon-azul {
+  -webkit-text-stroke: 1px #76c7ed;
+  text-shadow: 0 0 2l0px #5aafd6, 0 0 40px #5aafd6;
+}
+
+.icon-neon {
+  -webkit-text-stroke: 1px #822a74;
+  text-shadow: 1px 1px 10px #822a74, 1px 1px 20px #822a74, 1px 1px 30px #822a74;
+}
