@@ -11,10 +11,24 @@ const MenuNav = () => {
 
   const handleDark = () => {
     dispatch(setDarkG(!dark));
+    if ("vibrate" in navigator) {
+      navigator.vibrate(50); // 200 milisegundos de vibración
+    } else {
+      console.log(
+        "La API de vibración no está soportada en este dispositivo/navegador."
+      );
+    }
   };
 
   const handleClose = () => {
     setClose(!close);
+    if ("vibrate" in navigator) {
+      navigator.vibrate(50); // 200 milisegundos de vibración
+    } else {
+      console.log(
+        "La API de vibración no está soportada en este dispositivo/navegador."
+      );
+    }
   };
 
   return (
